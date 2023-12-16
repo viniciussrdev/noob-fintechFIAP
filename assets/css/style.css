@@ -1,0 +1,161 @@
+/* Determinei algumas variáveis apenas para teste e estudo. Escolhi uma fonte, o border radius usado nos formulários e nos botões, e uma cor branca que foi utilizada algumas vezes. Criei meu gradiente no JoshWcomeau a partir do Protótipo que já havia criado no Figma. */
+
+:root {
+    --my-font: 'Changa One', sans-serif;
+    --border-radius: 0.8rem;
+    --white-color: #fff;
+    --body-gradient: linear-gradient(
+        180deg,
+        hsl(152deg 53% 56%) 0%,
+        hsl(156deg 53% 55%) 9%,
+        hsl(159deg 53% 53%) 18%,
+        hsl(162deg 52% 52%) 27%,
+        hsl(165deg 52% 51%) 36%,
+        hsl(168deg 51% 50%) 45%,
+        hsl(170deg 52% 49%) 55%,
+        hsl(172deg 52% 49%) 64%,
+        hsl(174deg 51% 48%) 73%,
+        hsl(176deg 49% 48%) 82%,
+        hsl(178deg 47% 48%) 91%,
+        hsl(179deg 45% 48%) 100%);
+}
+
+/* Reset CSS e aplicação da fonte usada em todo o projeto no seletor geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--my-font);
+}
+
+/* Alterei a font-size, pois decidi usar a medida "rem" em todo o projeto. O que está em "px" é porque a alteração não surtia os efeitos que  eu gostaria, e não entendi muito bem o porquê disso*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--body-gradient);
+    color: var(--white-color);
+    min-height: 100vh;
+}
+
+.header {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    margin-bottom: 2rem;
+}
+
+.app-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 150;
+    margin-bottom: 0;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.white-circle-photo {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.2);
+}
+
+.login-forms {
+    margin: 4rem auto 0;
+    width: 70%;
+    /* max-width: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-forms input {
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+}
+
+
+.dados-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input1 {
+    width: 100%;
+}
+
+.login-btns {
+    width: 70%;
+    margin: 4rem auto 5rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btns .btn2-cadastro,
+.login-btns .btn1-login {
+    width: 45%;
+    height: 6rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Usei Box-shadow para maior impressão de botão */
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.2); 
+    border-radius: var(--border-radius);
+}
+
+.btn1-login {
+    background-color: var(--white-color);
+}
+
+.btn1-login h3{
+    color: black;
+}
+
+.btn2-cadastro h3{
+    font-weight: 100;
+}
+
+.login-options {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.btn-google,
+.btn-face {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    margin: 0.1rem auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Usei Box-shadow para maior impressão de botão */
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.2);
+}
+
+/* Utilização do atributo hover para mudança no cursor e "animação" de tamanho dos botões */
+.btn1-login:hover, .btn2-cadastro:hover, .btn-google:hover, .btn-face:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+

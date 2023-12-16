@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fintech - Noob</title>
+    <!-- Chamada do Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+
+    <!-- Chamada do CSS do Bootstrap via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-rnJ/CiRRkYMYL9XzvtxzIv9uAZF+PhgXz2f8SQLThAnqE3stpuEm+HGGP4wyb2iX" crossorigin="anonymous">
+
+    <!-- Chamada das minhas regras CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo do app e foto do Perfil do usuário -->
+    <header class="header">
+        <div>
+            <h1 class="app-logo">noob<br>fintech.</h1>
+        </div>
+        <div class="photo-user">
+
+            <!-- Criação de um círculo branco para enquadrar o foto do Perfil -->
+            <div class="white-circle-photo">
+                <img src="./assets/images/photo-user.png" alt="Photo User">
+            </div>
+        </div>
+    </header>
+
+    <!-- Criação dos formulários: 2 inputs sem "label" (placeholder faezndo esse papel) -->
+    <div class="container login-forms">
+        <form id="dados-login" name="dados-login">
+            <input class="form-control input1" type="text" name="user" id="user" placeholder="Usuário">
+            <input class="form-control input2" type="password" name="passwd" id="passwd" placeholder="Senha">
+        </form>
+    </div>
+
+    <!-- Criação dos Botões de LogIn ou Cadastro (com uso do Bootstrap para auxiliar estilização) -->
+    <div class="container login-btns">
+        <div class="btn btn-primary btn1-login">
+            <h3>Log In</h3>
+        </div>
+        <div class="btn btn-success btn2-cadastro">
+            <h3>Cadastro</h3>
+        </div>
+    </div>
+
+    <!-- Criação dos Botões alternativos ou Opções de Login -->
+    <div class="container login-options">
+        <div class="btn btn-light btn-google">
+            <img src="./assets/images/google-btn.png" alt="Google">
+        </div>
+        <div>
+            <!-- Criei duas tags "p" pois não estava conseguindo alinhar os textos, tentei com tag "br", mas não ficou legal -->
+            <p>Entrar</p>
+            <p>com</p>
+        </div>
+
+        <!-- Botão alternativo -->
+        <div class="btn btn-light btn-face">
+            <img src="./assets/images/face-btn.png" alt="Facebook">
+        </div>
+    </div>
+
+    <!-- Apaguei a Chamada do Js do Bootstrap via CDN que estava aqui -->    
+</body>
+</html>
+
